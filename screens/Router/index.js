@@ -5,7 +5,7 @@ import Loader from '../Loader';
 import Register from '../Register';
 import Tabs from '../Tabs';
 import RemainingTime from '../RemainingTime';
-import { register, submitReport, unregister, authenticate } from '../../utils/api';
+import { register, submitReport, unregister, submitWelfareReport } from '../../utils/api';
 
 export default class Router extends React.Component{
 
@@ -19,7 +19,8 @@ export default class Router extends React.Component{
             policeOfficerName: "",
             policeOfficerMobile: "",
             remainingNumberOfDays: 0,
-            showRemaining: false
+            showRemaining: false,
+            token:""
         }
 
         this.setLoadingTrue = this.setLoadingTrue.bind(this);
@@ -32,33 +33,31 @@ export default class Router extends React.Component{
     }
 
     async componentDidMount(){
-        const qNumber = await _retrieveData(constants.storeKeys.RegisterToken);
-        if(!qNumber){
+        const qNumber = await _retrieveData(constants.storeKeys.QNumber);
+        const token = await _retrieveData(constants.storeKeys.RegisterToken);
+        const policeOfficerName = await _retrieveData(constants.storeKeys.policeManName);
+        const policeOfficerMobile = await _retrieveData(constants.storeKeys.policeManNumber);
+        const registeredDate = await _retrieveData(constants.storeKeys.registeredDate);
+
+        
+
+        if(!qNumber || !policeOfficerName || !policeOfficerMobile || !registeredDate){
             this.setState({isLoading: false, qNumber: null})
             return;
         }else{
-            const response = await authenticate(qNumber);
-            if(response){
-                const {
-                    isAuthenticated,
-                    policeOfficerName,
-                    policeOfficerMobile,
-                    remainingDays
-                } = response;
-                if(isAuthenticated){
-                    this.setState({
-                        isLoading: false, 
-                        qNumber,
-                        policeOfficerName,
-                        policeOfficerMobile,
-                        remainingDays
-                    })
-                }else{
-                    this.setState({isLoading: false, qNumber: null})
-                }
-            }else{
-                this.setState({isLoading: false, qNumber: null})
-            }
+            const today = new Date().getTime();
+            const remainingDays = Math.round((today - Number(registeredDate))/(60*60*24*1000));
+            
+            
+
+            this.setState({
+                isLoading: false, 
+                qNumber,
+                policeOfficerName,
+                policeOfficerMobile,
+                remainingDays: remainingDays>14 ? 0 : (14-remainingDays),
+                token
+            })
         }
     }
 
@@ -77,20 +76,26 @@ export default class Router extends React.Component{
         if(response){
             const {
                 isAuthenticated,
+                token,
                 policeOfficerName,
                 policeOfficerMobile,
-                remainingDays
+                registeredDate
             } = response;
             if(isAuthenticated){
                 this.setState({
                     isLoading: false, 
                     qNumber,
+                    token,
                     policeOfficerName,
                     policeOfficerMobile,
-                    remainingDays,
+                    remainingDays: 14,
                     isRegistrationError:false
                 })
-                await _storeData(constants.storeKeys.RegisterToken,qNumber);
+                await _storeData(constants.storeKeys.QNumber,qNumber);
+                await _storeData(constants.storeKeys.RegisterToken,token);
+                await _storeData(constants.storeKeys.policeManName,policeOfficerName);
+                await _storeData(constants.storeKeys.policeManNumber,policeOfficerMobile);
+                await _storeData(constants.storeKeys.registeredDate,`${registeredDate}`);
             }else{
                 this.setState({isRegistrationError:true})
             }
@@ -99,9 +104,9 @@ export default class Router extends React.Component{
         }
     }
 
-    async submitReport(list){
+    async submitReport(report){
         this.setLoadingTrue();
-        const response = await submitWelfareReport({qNumber:this.state.qNumber,list});
+        const response = await submitReport(report, this.state.token);
         this.setLoadingFalse();
         if(response){
             this.props.submissionCompleted();
@@ -110,8 +115,8 @@ export default class Router extends React.Component{
         }
     }
 
-    async sendWelfareRequest(data){
-        const response = await submitReport({...data,qNumber:this.state.qNumber});
+    async sendWelfareRequest(list){
+        const response = await submitWelfareReport(list,this.state.token);
         this.setLoadingFalse();
         if(response){
             this.props.submissionCompleted();
@@ -122,11 +127,15 @@ export default class Router extends React.Component{
 
     async logout(){
         this.setLoadingTrue();
-        const response = await unregister(this.state.qNumber);
+        const response = await unregister(this.state.token);
         this.setLoadingFalse();
         if(response){
             this.setState({qNumber: null});
+            await _removeData(constants.storeKeys.qNumber);
             await _removeData(constants.storeKeys.RegisterToken);
+            await _removeData(constants.storeKeys.policeManName);
+            await _removeData(constants.storeKeys.policeManNumber);
+            await _removeData(constants.storeKeys.registeredDate);
             this.props.logoutCompleted();
         }else{
             this.props.logoutError();

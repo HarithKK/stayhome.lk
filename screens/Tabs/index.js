@@ -26,7 +26,7 @@ export default class Tabs extends Component {
   generateContent(){
     if(this.state.activeTab===0){this.props.remainingDays
         if(this.props.remainingDays===0){
-          return <RemainingTime days={0}/>
+          return <RemainingTime days={0} language={this.props.language}/>
         }
         return <SymptomsSheet 
         remainingDays={this.props.remainingDays}

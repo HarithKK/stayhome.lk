@@ -26,6 +26,10 @@ export default [
         type: 'isHeadache'
     },
     {
+        image: Asset.fromModule(require('./assets/headache.png')).uri,
+        type: 'isFever'
+    },
+    {
         image: Asset.fromModule(require('./assets/breath.png')).uri,
         type: 'isBreath'
     },

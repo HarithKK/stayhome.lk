@@ -1,77 +1,123 @@
 import fetch from 'node-fetch';
 import constants from '../constants';
 
+const defaultHeaders = { 'Content-Type': 'application/json' }
+const STATUS_CODES = {
+    ERROR: 400
+}
+
 export const register = async (qNumber) =>{
     try{
-        const response = await fetch(`${constants.url}/register?qNumber=${qNumber}`, { method: 'POST' });
+        const body = {
+            mobileNumber: qNumber
+        }
+        const response = await fetch(`${constants.url}/register`,
+         { method: 'POST', 
+           headers: defaultHeaders,
+           body: JSON.stringify(body)
+         });
         const json = await response.json();
-        return json;
+        if(json.statusCode === STATUS_CODES.ERROR){
+            return {
+                isAuthenticated: false,
+                token: "",
+                policeOfficerName: '',
+                policeOfficerMobile: '',
+                registeredDate: null
+            };
+        }
+        return {
+            isAuthenticated: true,
+            token: json.token,
+            policeOfficerName: json.policeManData.name,
+            policeOfficerMobile: json.policeManData.mobile,
+            registeredDate: new Date().getTime()
+        };
     }catch(e){
         return null;
     }
 }
 
-export const unregister = async (qNumber) =>{
+export const unregister = async (token) =>{
     try{
-        const response = await fetch(`${constants.url}/unregister?qNumber=${qNumber}`, { method: 'POST' });
+        const headers = {
+            ...defaultHeaders,
+            'Authorization': `Basic ${token}`
+        }
+        const response = await fetch(`${constants.url}/unregister`, 
+        { method: 'POST', headers });
         const json = await response.json();
-        return json.affectedRows && json.changedRows>0;
-    }catch(e){
-        return null;
-    }
-}
-
-export const authenticate = async (qNumber) =>{
-    try{
-        const response = await fetch(`${constants.url}/authenticate?qNumber=${qNumber}`, { method: 'POST' });
-        const json = await response.json();
-        return json;
+        if(json.statusCode === STATUS_CODES.ERROR){
+            return null;
+        }
+        return true;
     }catch(e){
         return null;
     }
 }
 
 export const submitReport = async ({
-    qNumber,
     isCough,
     isCold,
     isDiarrhea,
     isSoreThroat,
     isRash,
     isHeadache,
+    isFever,
     isBreath,
-    isFatigue}) =>{
+    isFatigue},token) =>{
 
     const body = {
-        qNumber,
-        isCough: isCough? 1:0,
-        isCold: isCold?1:0,
-        isDiarrhea: isDiarrhea?1:0 ,
-        isSoreThroat: isSoreThroat?1:0,
-        isRash: isRash?1:0,
-        isHeadache: isHeadache?1:0,
-        isBreath: isBreath?1:0,
-        isFatigue: isFatigue?1:0
+        COUGH: isCough,
+        COLD: isCold,
+        DIARRHEA: isDiarrhea,
+        THROAT: isSoreThroat,
+        MYALGIA: isRash,
+        HEADACHE: isHeadache,
+        FEVER: isFever,
+        BREATH: isBreath,
+        FATIGUE: isFatigue
     } 
+
+    const headers = {
+        ...defaultHeaders,
+        'Authorization': `Basic ${token}`
+    }
     try{
-        const response = await fetch(`${constants.url}/submitReport`, { method: 'POST', body: JSON.stringify(body), headers: { 'Content-Type': 'application/json' }, });
+        const response = await fetch(`${constants.url}/submitReport`, {
+             method: 'PUT', 
+             body: JSON.stringify(body), 
+             headers});
         const json = await response.json();
-        return json.affectedRows;
+        if(json.statusCode === STATUS_CODES.ERROR){
+            return null;
+        }
+        return true;
     }catch(e){
         return null;
     }
 }
 
-export const submitWelfareReport = async ({qNumber, list}) =>{
+export const submitWelfareReport = async (list, token) =>{
 
     const body = {
-        qNumber,
         list
-    } 
+    }
+
+    const headers = {
+        ...defaultHeaders,
+        'Authorization': `Basic ${token}`
+    }
     try{
-        const response = await fetch(`${constants.url}/submitWelfareReport`, { method: 'POST', body: JSON.stringify(body), headers: { 'Content-Type': 'application/json' }, });
+        const response = await fetch(`${constants.url}/submitWelfareReport`, {
+             method: 'PUT', 
+             body: JSON.stringify(body), 
+             headers});
         const json = await response.json();
-        return json.affectedRows;
+        if(json.statusCode === STATUS_CODES.ERROR){
+            return null;
+        }
+        return true;
     }catch(e){
         return null;
     }

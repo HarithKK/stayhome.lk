@@ -78,6 +78,11 @@ const messages = {
         en: 'Are you having headache?',
         ti: 'உங்களுக்கு தலைவலி இருக்கிறதா ?'
     },
+    isFever:{
+        si: 'ඔබට උණ තිබේද? ?',
+        en: 'Do you have fever?',
+        ti: 'உங்களுக்கு காய்ச்சல் இருக்கிறதா ?'
+    },
     isBreath:{
         si: 'ඔබට හුස්ම ගැනීමේ අපහසුතා ඇතිද ?',
         en: 'Are you having breathing difficulties?',

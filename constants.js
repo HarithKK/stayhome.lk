@@ -1,6 +1,10 @@
 export default {
     storeKeys: {
+        QNumber: 'QNUMBER',
         RegisterToken: 'REGISTER_TOKEN',
+        policeManName: 'POLICEMAN_NAME',
+        policeManNumber: 'POLICEMAN_NUMBER',
+        registeredDate: 'REGISTERED_DATE',
         Language: 'LANGUAGE'
     },
     url: 'http://34.66.168.177:3000/mobile-bff',

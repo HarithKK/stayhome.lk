@@ -49,7 +49,8 @@ export default class SymptomsSheet extends React.Component{
             isRash:false,
             isHeadache: false,
             isBreath: false,
-            isFatigue: false
+            isFatigue: false,
+            isFever: false,
         }
         this.onHandleClick= this.onHandleClick.bind(this);
         this.onHandleSubmit = this.onHandleSubmit.bind(this);
@@ -70,6 +71,7 @@ export default class SymptomsSheet extends React.Component{
             isSoreThroat,
             isRash,
             isHeadache,
+            isFever,
             isBreath,
             isFatigue
         } = this.state;
@@ -80,6 +82,7 @@ export default class SymptomsSheet extends React.Component{
             isSoreThroat,
             isRash,
             isHeadache,
+            isFever,
             isBreath,
             isFatigue
         });
