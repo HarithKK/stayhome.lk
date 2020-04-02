@@ -116,6 +116,7 @@ export default class Router extends React.Component{
     }
 
     async sendWelfareRequest(list){
+        this.setLoadingTrue();
         const response = await submitWelfareReport(list,this.state.token);
         this.setLoadingFalse();
         if(response){

@@ -36,7 +36,8 @@ const messages = {
     },
     no: {
         en: 'No',
-        si: 'இல்லை'
+        si: 'නැත',
+        ti: 'இல்லை'
     },
     moreDays:{
         en: 'Days more ...',

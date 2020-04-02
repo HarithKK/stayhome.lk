@@ -9,15 +9,14 @@ const STATUS_CODES = {
 export const register = async (qNumber) =>{
     try{
         const body = {
-            mobileNumber: qNumber
+            secret: qNumber
         }
-        const response = await fetch(`${constants.url}/register`,
+        const response = await fetch(`${constants.url}/api/user/quarantine/authenticate`,
          { method: 'POST', 
            headers: defaultHeaders,
            body: JSON.stringify(body)
          });
-        const json = await response.json();
-        if(json.statusCode === STATUS_CODES.ERROR){
+        if(!response.ok){
             return {
                 isAuthenticated: false,
                 token: "",
@@ -26,11 +25,13 @@ export const register = async (qNumber) =>{
                 registeredDate: null
             };
         }
+        const json = await response.json();
+        const decodeData = {name:'x', mobile:'y'};
         return {
             isAuthenticated: true,
             token: json.token,
-            policeOfficerName: json.policeManData.name,
-            policeOfficerMobile: json.policeManData.mobile,
+            policeOfficerName: decodeData.name,
+            policeOfficerMobile: decodeData.mobile,
             registeredDate: new Date().getTime()
         };
     }catch(e){
@@ -42,12 +43,11 @@ export const unregister = async (token) =>{
     try{
         const headers = {
             ...defaultHeaders,
-            'Authorization': `Basic ${token}`
+            'Authorization': `Bearer ${token}`
         }
         const response = await fetch(`${constants.url}/unregister`, 
         { method: 'POST', headers });
-        const json = await response.json();
-        if(json.statusCode === STATUS_CODES.ERROR){
+        if(!response.ok){
             return null;
         }
         return true;
@@ -81,15 +81,14 @@ export const submitReport = async ({
 
     const headers = {
         ...defaultHeaders,
-        'Authorization': `Basic ${token}`
+        'Authorization': `Bearer ${token}`
     }
     try{
-        const response = await fetch(`${constants.url}/submitReport`, {
+        const response = await fetch(`${constants.url}/api/user/quarantine/point`, {
              method: 'PUT', 
              body: JSON.stringify(body), 
              headers});
-        const json = await response.json();
-        if(json.statusCode === STATUS_CODES.ERROR){
+        if(!response.ok){
             return null;
         }
         return true;
@@ -100,21 +99,22 @@ export const submitReport = async ({
 
 export const submitWelfareReport = async (list, token) =>{
 
-    const body = {
-        list
-    }
+    const body = {};
+
+    list.forEach(item=>{
+        body[item]=true;
+    })
 
     const headers = {
         ...defaultHeaders,
-        'Authorization': `Basic ${token}`
+        'Authorization': `Bearer ${token}`
     }
     try{
         const response = await fetch(`${constants.url}/submitWelfareReport`, {
              method: 'PUT', 
              body: JSON.stringify(body), 
              headers});
-        const json = await response.json();
-        if(json.statusCode === STATUS_CODES.ERROR){
+        if(!response.ok){
             return null;
         }
         return true;

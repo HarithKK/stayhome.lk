@@ -7,7 +7,7 @@ export default {
         registeredDate: 'REGISTERED_DATE',
         Language: 'LANGUAGE'
     },
-    url: 'http://34.66.168.177:3000/mobile-bff',
+    url: 'http://34.66.168.177:3000/pansiluEnd',
     languages:[
         'si',
         'en',
