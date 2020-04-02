@@ -4,6 +4,7 @@ import { Image, Switch, TouchableNativeFeedback } from 'react-native';
 import colors from '../../native-base-theme/variables/material';
 import Header from '../components/Header';
 import symptoms from './symptoms';
+import Messages from '../../utils/messages';
 
 const styles = {
     container:{marginBottom:20},
@@ -31,7 +32,8 @@ const styles = {
     submitText:{
         color: colors.brandWhite,
         textAlign:'center'
-    }
+    },
+    rightComponent: {display:'flex', alignItems:'flex-end'}
 }
 
 export default class SymptomsSheet extends React.Component{
@@ -87,7 +89,13 @@ export default class SymptomsSheet extends React.Component{
 
         return(
         <>    
-        <Header title="Check list" subtitle="පිරික්සුම් ලැයිස්තුව" logout={this.props.logout}/>    
+        <Header 
+            remainingDays={this.props.remainingDays} 
+             title={Messages('checkList', this.props.language)} 
+             logout={this.props.logout} 
+             showRemaining={this.props.showRemaining}
+             changeLanguage={this.props.changeLanguage}
+             language={this.props.language}/>    
         <Content style={styles.container}>
             {
                 symptoms.map((symptom,key)=>
@@ -97,11 +105,10 @@ export default class SymptomsSheet extends React.Component{
                         <Left>
                         <Image active style={styles.cardImage} source={{uri: symptom.image}}/>
                         <View>
-                            <Text style={styles.text}>{symptom.sinhalaText}</Text>
-                            <Text style={styles.text}>{symptom.englishText}</Text>
+                            <Text style={styles.text}>{Messages(symptom.type, this.props.language)}</Text>
                         </View>
                         </Left>
-                        <Right >
+                        <Right style={styles.rightComponent} >
                             <View>
                             <Switch
                                  onValueChange={()=>this.onHandleClick(symptom.type)}   
@@ -109,7 +116,7 @@ export default class SymptomsSheet extends React.Component{
                                  thumbColor={ this.state[symptom.type] ? colors.brandDanger : colors.brandSuccess}
                                  value={this.state[symptom.type]}
                             />
-                            <Text style={styles.switchText}>{this.state[symptom.type] ? 'Yes/ඔව්' : 'No/නැත'}</Text>
+                            <Text style={styles.switchText}>{this.state[symptom.type] ? Messages('yes', this.props.language) : Messages('no', this.props.language)}</Text>
                             </View>
                         </Right>
                     </CardItem>
@@ -118,8 +125,7 @@ export default class SymptomsSheet extends React.Component{
             }
             <Button style={styles.submitButton} onPress={this.onHandleSubmit}>
                 <View>
-                    <Text style={styles.submitText}>වාර්තාව යවන්න</Text>
-                    <Text style={styles.submitText}>Submit Report</Text>
+                    <Text style={styles.submitText}>{Messages('sendReportButtonText', this.props.language)}</Text>
                 </View>
             </Button>
         </Content>

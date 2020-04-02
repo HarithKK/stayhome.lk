@@ -5,7 +5,7 @@ export const register = async (qNumber) =>{
     try{
         const response = await fetch(`${constants.url}/register?qNumber=${qNumber}`, { method: 'POST' });
         const json = await response.json();
-        return json.affectedRows && json.changedRows>0;
+        return json;
     }catch(e){
         return null;
     }
@@ -16,6 +16,16 @@ export const unregister = async (qNumber) =>{
         const response = await fetch(`${constants.url}/unregister?qNumber=${qNumber}`, { method: 'POST' });
         const json = await response.json();
         return json.affectedRows && json.changedRows>0;
+    }catch(e){
+        return null;
+    }
+}
+
+export const authenticate = async (qNumber) =>{
+    try{
+        const response = await fetch(`${constants.url}/authenticate?qNumber=${qNumber}`, { method: 'POST' });
+        const json = await response.json();
+        return json;
     }catch(e){
         return null;
     }
@@ -45,6 +55,21 @@ export const submitReport = async ({
     } 
     try{
         const response = await fetch(`${constants.url}/submitReport`, { method: 'POST', body: JSON.stringify(body), headers: { 'Content-Type': 'application/json' }, });
+        const json = await response.json();
+        return json.affectedRows;
+    }catch(e){
+        return null;
+    }
+}
+
+export const submitWelfareReport = async ({qNumber, list}) =>{
+
+    const body = {
+        qNumber,
+        list
+    } 
+    try{
+        const response = await fetch(`${constants.url}/submitWelfareReport`, { method: 'POST', body: JSON.stringify(body), headers: { 'Content-Type': 'application/json' }, });
         const json = await response.json();
         return json.affectedRows;
     }catch(e){

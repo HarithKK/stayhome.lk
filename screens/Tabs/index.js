@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
+import { Container, Footer, FooterTab, Button, Icon, Text } from 'native-base';
 import SymptomsSheet from '../SymptomsSheet';
+import RemainingTime from '../RemainingTime';
 import Emergency from '../Emergency';
+import WelfareRequirements from '../WelfareRequirements';
+import Messages from '../../utils/messages';
 
 export default class Tabs extends Component {
 
@@ -21,10 +24,34 @@ export default class Tabs extends Component {
   }
 
   generateContent(){
-    if(this.state.activeTab===0){
-        return <SymptomsSheet submitReport={this.props.submitReport} logout={this.props.logout}/>
+    if(this.state.activeTab===0){this.props.remainingDays
+        if(this.props.remainingDays===0){
+          return <RemainingTime days={0}/>
+        }
+        return <SymptomsSheet 
+        remainingDays={this.props.remainingDays}
+        submitReport={this.props.submitReport}
+        logout={this.props.logout}
+        showRemaining={this.props.showRemaining}
+        language={this.props.language}
+        changeLanguage={this.props.changeLanguage}/>
     }else if(this.state.activeTab===1){
-      return <Emergency logout={this.props.logout}/>
+      return <Emergency
+       remainingDays={this.props.remainingDays}
+       logout={this.props.logout}
+       policeOfficerName={this.props.policeOfficerName}
+       policeOfficerMobile={this.props.policeOfficerMobile}
+       showRemaining={this.props.showRemaining}
+       language={this.props.language}
+       changeLanguage={this.props.changeLanguage}/>
+    }else if(this.state.activeTab===2){
+      return <WelfareRequirements
+       remainingDays={this.props.remainingDays}
+       logout={this.props.logout}
+       sendWelfareRequest={this.props.sendWelfareRequest}
+       showRemaining={this.props.showRemaining}
+       language={this.props.language}
+       changeLanguage={this.props.changeLanguage}/>
     }else{
         return <NoContent/>
     }
@@ -38,13 +65,15 @@ export default class Tabs extends Component {
           <FooterTab>
             <Button onPress={()=>this.setActiveTab(0)} active={this.state.activeTab===0}>
                 <Icon name='checklist' type="Octicons" />
-                <Text >පිරික්සුම් ලැයිස්තුව</Text>
-                <Text >Check list</Text>
+                <Text >{Messages('checkList', this.props.language)}</Text>
             </Button>
             <Button onPress={()=>this.setActiveTab(1)} active={this.state.activeTab===1}>
                 <Icon name='phone-call' type="Feather" />
-                <Text >හදිසි ඇමතුම්</Text>
-                <Text >Emergency calls</Text>
+                <Text >{Messages('emergencyCalls',this.props.language)}</Text>
+            </Button>
+            <Button onPress={()=>this.setActiveTab(2)} active={this.state.activeTab===2}>
+                <Icon name='users' type="Feather" />
+                <Text >{Messages('welfareRequests',this.props.language)}</Text>
             </Button>
            </FooterTab>
         </Footer>

@@ -5,6 +5,8 @@ import { Container, StyleProvider } from 'native-base';
 import * as Font from 'expo-font';
 import * as Network from 'expo-network';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { _retrieveData, _storeData } from './utils/asyncStore';
+import constants from './constants';
 import getTheme from './native-base-theme/components';
 import material from './native-base-theme/variables/material';
 import ErrorView, { ERROR_CODES } from './screens/ErrorView';
@@ -26,14 +28,16 @@ export default class App extends React.Component {
         submissionError:false,
         submissionCompleted:false,
         logoutCompleted:false,
-        logoutError:false
-      } 
+        logoutError:false,
+      },
+      language: 'en' 
     };
 
     this.handleSubmissionError= this.handleSubmissionError.bind(this);
     this.handleSubmissionCompleted= this.handleSubmissionCompleted.bind(this);
     this.logoutError= this.logoutError.bind(this);
     this.logoutCompleted=this.logoutCompleted.bind(this);
+    this.changeLanguage=this.changeLanguage.bind(this);
   }
 
   async componentDidMount() {
@@ -44,12 +48,17 @@ export default class App extends React.Component {
       ...MaterialCommunityIcons.font
     });
     const {isConnected, isInternetReachable} = await Network.getNetworkStateAsync();
+    let language = await _retrieveData(constants.storeKeys.Language);
+    if(!language){
+      language='ti';
+    }
     this.setState({ 
         isReady: true,
         networkState: {
             isConnected,
             isInternetReachable
-        }
+        },
+        language
       });
   }
 
@@ -73,33 +82,40 @@ export default class App extends React.Component {
     setTimeout(()=>this.setState({logoutError:false}), 2000);
   }
 
+  async changeLanguage(){
+    const l = constants.languages.indexOf(this.state.language) + 1;
+    const language = constants.languages[l===constants.languages.length ? 0 : l]
+    await _storeData(constants.storeKeys.Language,language);
+    this.setState({language});
+  }
+
   render() {
     if (!this.state.isReady) {
       return <AppLoading />;
     }
 
     if(!this.state.networkState.isConnected){
-      return <ErrorView type={ERROR_CODES.NO_NETWORK}/>
+      return <ErrorView type={ERROR_CODES.NO_NETWORK} language={this.state.language}/>
     }
 
     if(!this.state.networkState.isInternetReachable){
-      return <ErrorView type={ERROR_CODES.NO_INTERNET}/>
+      return <ErrorView type={ERROR_CODES.NO_INTERNET} language={this.state.language}/>
     }
 
     if(this.state.submissionError){
-      return <ErrorView type={ERROR_CODES.SUBMIT_ERROR}/>
+      return <ErrorView type={ERROR_CODES.SUBMIT_ERROR} language={this.state.language}/>
     }
 
     if(this.state.submissionCompleted){
-      return <SuccessView type={SUCCESS_CODES.SUBMITTED}/>
+      return <SuccessView type={SUCCESS_CODES.SUBMITTED} language={this.state.language}/>
     }
 
     if(this.state.logoutError){
-      return <ErrorView type={ERROR_CODES.LOGOUT_ERROR}/>
+      return <ErrorView type={ERROR_CODES.LOGOUT_ERROR} language={this.state.language}/>
     }
 
     if(this.state.logoutCompleted){
-      return <SuccessView type={SUCCESS_CODES.LOGOUT}/>
+      return <SuccessView type={SUCCESS_CODES.LOGOUT} language={this.state.language}/>
     }
 
     return (
@@ -108,7 +124,9 @@ export default class App extends React.Component {
           <Router submissionError={this.handleSubmissionError} 
           submissionCompleted={this.handleSubmissionCompleted}
           logoutCompleted={this.logoutCompleted}
-          logoutError={this.logoutError}/>
+          logoutError={this.logoutError}
+          language={this.state.language}
+          changeLanguage={this.changeLanguage}/>
         </Container>
       </StyleProvider>
     );

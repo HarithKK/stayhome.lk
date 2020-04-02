@@ -133,6 +133,7 @@ export default {
   brandDark: '#000',
   brandLight: '#f4f4f4',
   brandWhite: '#FFFFFF',
+  brandBlue: '#3B81EE',
 
   // Container
   containerBgColor: '#fff',

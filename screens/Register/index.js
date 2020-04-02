@@ -1,6 +1,7 @@
 import React from 'react';
 import { Content, Text, View, Form, Item, Input, Button } from 'native-base';
 import colors from '../../native-base-theme/variables/material'
+import Messages from '../../utils/messages';
 
 const styles = {
     container:{flex:1, justifyContent:'center', alignItems:'center'},
@@ -51,13 +52,13 @@ export default class Register extends React.Component {
                         <Item>
                             <Input 
                                 style={this.props.isRegistrationError ? styles.QInputError : styles.QInput} 
-                                placeholder="Enter Quarantine Number" 
+                                placeholder={Messages('enterQNumber', this.props.language)}
                                 value={this.state.qNumber}
                                 onChangeText={(qNumber)=>this.setState({qNumber})}
                             />
                         </Item>
                         <Button disabled={this.state.qNumber === ""} style={styles.submitButton} onPress={this.onHandleRegister}>
-                            <Text>Register</Text> 
+                            <Text>{Messages('register', this.props.language)}</Text> 
                         </Button>    
                     </Form>
                 </View>

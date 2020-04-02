@@ -1,6 +1,7 @@
 import React from 'react';
 import { Content, Icon, Text } from 'native-base';
 import colors from '../../native-base-theme/variables/commonColor.js'
+import Messages from '../../utils/messages';
 
 export const SUCCESS_CODES = {
     SUBMITTED: 'SUBMITTED',
@@ -13,33 +14,30 @@ const styles = {
     text: {color: colors.brandSuccess}
 }
 
-export default ({type}) => {
+export default ({type, language}) => {
 
     let data = {
         iconName: 'exclamation',
-        message: 'Unknown Message'
+        message: ''
     };
 
     switch(type){
         case SUCCESS_CODES.SUBMITTED:
             data = {
                 iconName: 'check-box-outline',
-                message: 'Report Sent',
-                sinhalaMessage: 'වාර්තාව යවා ඇත'
+                message: Messages('submitted', language)
             };
             break;
         case SUCCESS_CODES.LOGOUT:
             data = {
                 iconName: 'cloud-check',
-                message: 'Logout Completed',
-                sinhalaMessage: 'පිටවීමේ සම්පුර්ණ කරන ලදි'
+                message: Messages('logoutSuccess', language)
             };
             break;
         default:
             data = {
                 iconName: 'exclamation',
                 message: '',
-                sinhalaMessage: ''
             };
             break;
     }
@@ -48,6 +46,5 @@ export default ({type}) => {
     return <Content contentContainerStyle={styles.container}>
                 <Icon danger name={data.iconName} type="MaterialCommunityIcons" style={styles.icon} />
                 <Text style={styles.text}>{data.message}</Text>
-                <Text style={styles.text}>{data.sinhalaMessage}</Text>
             </Content>
 }
