@@ -49,6 +49,11 @@ const messages = {
         si: "වාර්තාව යවන්න",
         ti: "அறிக்கை அனுப்ப"
     },
+    wrongNumber:{
+        en: "Incorrect Id",
+        si: "අංකය වැරදිය",
+        ti: "எண் தவறானது"
+    },
     isCough:{
         si: 'ඔබට කැස්ස තිබේද ?',
         en: 'Do you have cough?',

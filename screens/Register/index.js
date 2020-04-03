@@ -52,7 +52,7 @@ export default class Register extends React.Component {
                         <Item>
                             <Input 
                                 style={this.props.isRegistrationError ? styles.QInputError : styles.QInput} 
-                                placeholder={Messages('enterQNumber', this.props.language)}
+                                placeholder={ this.props.isRegistrationError ? Messages('wrongNumber', this.props.language):  Messages('enterQNumber', this.props.language)}
                                 value={this.state.qNumber}
                                 onChangeText={(qNumber)=>this.setState({qNumber})}
                             />

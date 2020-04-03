@@ -120,15 +120,11 @@ export default class Router extends React.Component{
         this.setLoadingTrue();
         const response = await unregister(this.state.token);
         this.setLoadingFalse();
-        if(response){
-            this.setState({qNumber: null});
-            await _removeData(constants.storeKeys.qNumber);
-            await _removeData(constants.storeKeys.RegisterToken);
-            await _removeData(constants.storeKeys.registeredDate);
-            this.props.logoutCompleted();
-        }else{
-            this.props.logoutError();
-        }
+        this.setState({qNumber: null});
+        await _removeData(constants.storeKeys.qNumber);
+        await _removeData(constants.storeKeys.RegisterToken);
+        await _removeData(constants.storeKeys.registeredDate);
+        this.props.logoutCompleted();
     }
 
     showRemaining(){

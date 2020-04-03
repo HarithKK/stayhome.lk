@@ -7,7 +7,7 @@ export default {
         registeredDate: 'REGISTERED_DATE',
         Language: 'LANGUAGE'
     },
-    url: 'http://34.66.168.177:3000/pansiluEnd',
+    url: 'http://18.138.48.140/qms',
     languages:[
         'si',
         'en',

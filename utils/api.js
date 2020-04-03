@@ -33,7 +33,6 @@ export const register = async (qNumber) =>{
             registeredDate: new Date().getTime()
         };
     }catch(e){
-        console.error(e);
         return null;
     }
 }
