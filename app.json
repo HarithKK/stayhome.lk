@@ -24,10 +24,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.uom.stayhome",
+      "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "com.uon.stayhome",
+      "package": "com.uom.stayhome",
       "versionCode": 1
     }
   }

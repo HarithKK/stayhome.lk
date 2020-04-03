@@ -72,7 +72,7 @@ export default class Tabs extends Component {
             </Button>
             <Button onPress={()=>this.setActiveTab(2)} active={this.state.activeTab===2}>
                 <Icon name='users' type="Feather" />
-                <Text >{Messages('welfareRequests',this.props.language)}</Text>
+                <Text style={{textAlign: 'center'}}>{Messages('welfareRequests',this.props.language)}</Text>
             </Button>
            </FooterTab>
         </Footer>

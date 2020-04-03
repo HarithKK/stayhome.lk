@@ -1,5 +1,6 @@
 import React from 'react';
 import { Linking } from 'expo';
+import Dialog, { SlideAnimation, DialogContent, DialogFooter, DialogButton } from 'react-native-popup-dialog';
 import { Content, Text,Card,CardItem, Right, View, Body, Button, Icon, Left } from 'native-base';
 import colors from '../../native-base-theme/variables/material';
 import Header from '../components/Header';
@@ -28,7 +29,10 @@ const styles = {
     ownColor:{
         color: colors.brandBlue
     },
-    rightComponent: {display:'flex', alignItems:'flex-end'}
+    rightComponent: {display:'flex', alignItems:'flex-end'},
+    callMoreButton:{width:200,marginTop:10, borderRadius: 10},
+    callMoreText:{textAlign:'center', color: colors.brandWhite},
+    callMoreView: { flex:1, justifyContent:"center"}
 }
 
 export default class SymptomsSheet extends React.Component{
@@ -37,11 +41,13 @@ export default class SymptomsSheet extends React.Component{
         super(props);
 
         this.state={
+            visible: false
         }
 
     }
 
     onHandleClick(number){
+        this.setState({visible:false})
         Linking.openURL(`tel:${number}`);
     }
 
@@ -68,7 +74,7 @@ export default class SymptomsSheet extends React.Component{
                         </View>
                         </Left>
                         <Right style={styles.rightComponent}>
-                            <Button success rounded onPress={()=>this.onHandleClick(this.props.policeOfficerMobile)}>
+                            <Button success rounded onPress={()=>this.setState({ visible: true })}>
                                 <Icon name="ios-call" type="Ionicons" />
                             </Button>
                         </Right>
@@ -93,6 +99,30 @@ export default class SymptomsSheet extends React.Component{
                     </CardItem>
                 </Card>)
             }
+            <Dialog
+                visible={this.state.visible}
+                footer={
+                    <DialogFooter>
+                      <DialogButton
+                        text="Cancel"
+                        onPress={()=>this.setState({ visible: false })}
+                      />
+                    </DialogFooter>
+                  }
+            >
+                <DialogContent>
+                    {
+                        this.props.inspectUsers.map((inspectUser,key)=>(
+                            <Button success style={styles.callMoreButton} key={key} onPress={()=>this.onHandleClick(inspectUser.mobile)}>
+                                <View style={styles.callMoreView}>
+                                    <Text style={styles.callMoreText}>{inspectUser.name}</Text>
+                                    <Text style={styles.callMoreText}>{inspectUser.mobile}</Text>
+                                </View>
+                            </Button>
+                        ))
+                    }
+                </DialogContent>
+            </Dialog>
         </Content>
         </>
      )

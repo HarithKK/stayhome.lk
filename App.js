@@ -50,7 +50,7 @@ export default class App extends React.Component {
     const {isConnected, isInternetReachable} = await Network.getNetworkStateAsync();
     let language = await _retrieveData(constants.storeKeys.Language);
     if(!language){
-      language='ti';
+      language='en';
     }
     this.setState({ 
         isReady: true,
