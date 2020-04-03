@@ -39,8 +39,7 @@ export default class Tabs extends Component {
       return <Emergency
        remainingDays={this.props.remainingDays}
        logout={this.props.logout}
-       policeOfficerName={this.props.policeOfficerName}
-       policeOfficerMobile={this.props.policeOfficerMobile}
+       inspectUsers={this.props.inspectUsers}
        showRemaining={this.props.showRemaining}
        language={this.props.language}
        changeLanguage={this.props.changeLanguage}/>

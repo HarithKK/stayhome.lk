@@ -1,10 +1,9 @@
 import fetch from 'node-fetch';
+import jwt_decode from 'jwt-decode';
 import constants from '../constants';
 
 const defaultHeaders = { 'Content-Type': 'application/json' }
-const STATUS_CODES = {
-    ERROR: 400
-}
+
 
 export const register = async (qNumber) =>{
     try{
@@ -26,15 +25,15 @@ export const register = async (qNumber) =>{
             };
         }
         const json = await response.json();
-        const decodeData = {name:'x', mobile:'y'};
+        const { inspectUsers }= jwt_decode(json.token);
         return {
             isAuthenticated: true,
             token: json.token,
-            policeOfficerName: decodeData.name,
-            policeOfficerMobile: decodeData.mobile,
+            inspectUsers,
             registeredDate: new Date().getTime()
         };
     }catch(e){
+        console.error(e);
         return null;
     }
 }

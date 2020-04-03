@@ -63,7 +63,8 @@ export default class SymptomsSheet extends React.Component{
                         <Left>
                         <View>
                             <Text style={{...styles.text,...styles.ownColor}}>{Messages('callYourPolice', this.props.language)}</Text>
-                            <Text style={{...styles.mobileText,...styles.ownColor}}>{`${this.props.policeOfficerName}-${this.props.policeOfficerMobile}`}</Text>
+                            {this.props.inspectUsers.map((inspectUser,key)=><Text key={key} style={{...styles.mobileText,...styles.ownColor}}>{`${inspectUser.name}-${inspectUser.mobile}`}</Text>)}
+                            
                         </View>
                         </Left>
                         <Right style={styles.rightComponent}>

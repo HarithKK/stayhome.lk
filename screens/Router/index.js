@@ -1,4 +1,5 @@
 import React from 'react';
+import jwt_decode from 'jwt-decode';
 import { _retrieveData, _storeData, _removeData } from '../../utils/asyncStore';
 import constants from '../../constants';
 import Loader from '../Loader';
@@ -16,8 +17,7 @@ export default class Router extends React.Component{
             isLoading: true,
             qNumber: null,
             isRegistrationError: false,
-            policeOfficerName: "",
-            policeOfficerMobile: "",
+            inspectUsers: [],
             remainingNumberOfDays: 0,
             showRemaining: false,
             token:""
@@ -35,26 +35,20 @@ export default class Router extends React.Component{
     async componentDidMount(){
         const qNumber = await _retrieveData(constants.storeKeys.QNumber);
         const token = await _retrieveData(constants.storeKeys.RegisterToken);
-        const policeOfficerName = await _retrieveData(constants.storeKeys.policeManName);
-        const policeOfficerMobile = await _retrieveData(constants.storeKeys.policeManNumber);
         const registeredDate = await _retrieveData(constants.storeKeys.registeredDate);
 
-        
-
-        if(!qNumber || !policeOfficerName || !policeOfficerMobile || !registeredDate){
+        if(!qNumber || !token || !registeredDate){
             this.setState({isLoading: false, qNumber: null})
             return;
         }else{
             const today = new Date().getTime();
             const remainingDays = Math.round((today - Number(registeredDate))/(60*60*24*1000));
-            
-            
+            const { inspectUsers }= jwt_decode(token);
 
             this.setState({
                 isLoading: false, 
                 qNumber,
-                policeOfficerName,
-                policeOfficerMobile,
+                inspectUsers,
                 remainingDays: remainingDays>14 ? 0 : (14-remainingDays),
                 token
             })
@@ -77,8 +71,7 @@ export default class Router extends React.Component{
             const {
                 isAuthenticated,
                 token,
-                policeOfficerName,
-                policeOfficerMobile,
+                inspectUsers,
                 registeredDate
             } = response;
             if(isAuthenticated){
@@ -86,15 +79,12 @@ export default class Router extends React.Component{
                     isLoading: false, 
                     qNumber,
                     token,
-                    policeOfficerName,
-                    policeOfficerMobile,
+                    inspectUsers,
                     remainingDays: 14,
                     isRegistrationError:false
                 })
                 await _storeData(constants.storeKeys.QNumber,qNumber);
                 await _storeData(constants.storeKeys.RegisterToken,token);
-                await _storeData(constants.storeKeys.policeManName,policeOfficerName);
-                await _storeData(constants.storeKeys.policeManNumber,policeOfficerMobile);
                 await _storeData(constants.storeKeys.registeredDate,`${registeredDate}`);
             }else{
                 this.setState({isRegistrationError:true})
@@ -134,8 +124,6 @@ export default class Router extends React.Component{
             this.setState({qNumber: null});
             await _removeData(constants.storeKeys.qNumber);
             await _removeData(constants.storeKeys.RegisterToken);
-            await _removeData(constants.storeKeys.policeManName);
-            await _removeData(constants.storeKeys.policeManNumber);
             await _removeData(constants.storeKeys.registeredDate);
             this.props.logoutCompleted();
         }else{
@@ -169,8 +157,7 @@ export default class Router extends React.Component{
         return <Tabs 
          submitReport={this.submitReport}
          logout={this.logout}
-         policeOfficerName={this.state.policeOfficerName}
-         policeOfficerMobile={this.state.policeOfficerMobile}
+         inspectUsers={this.state.inspectUsers}
          remainingDays={this.state.remainingDays}
          showRemaining={this.showRemaining}
          language={this.props.language}
