@@ -64,7 +64,9 @@ export default class SymptomsSheet extends React.Component{
          language={this.props.language}
          />    
         <Content style={styles.container}>
-               <Card style={styles.card}>
+             {
+                 this.props.inspectUsers.length>0 &&
+                 <Card style={styles.card}>
                     <CardItem > 
                         <Left>
                         <View>
@@ -81,7 +83,7 @@ export default class SymptomsSheet extends React.Component{
                         </Right>
                     </CardItem>
                 </Card>
-
+             }
             {
                 contacts.map((contact,key)=>
                 <Card style={styles.card} transparent key={key}>
