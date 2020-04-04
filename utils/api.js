@@ -19,17 +19,17 @@ export const register = async (qNumber) =>{
             return {
                 isAuthenticated: false,
                 token: "",
-                policeOfficerName: '',
-                policeOfficerMobile: '',
+                inspectUsers: [],
                 registeredDate: null
             };
         }
         const json = await response.json();
-        const { inspectUsers }= jwt_decode(json.token);
+        const { inspectUsers, name }= jwt_decode(json.token);
         return {
             isAuthenticated: true,
             token: json.token,
             inspectUsers,
+            name,
             registeredDate: new Date().getTime()
         };
     }catch(e){

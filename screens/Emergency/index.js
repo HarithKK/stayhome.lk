@@ -23,7 +23,7 @@ const styles = {
     },
     mobileText:{
         fontSize:11,
-        textAlign:'center',
+        textAlign:'left',
         color:'black'
     },
     ownColor:{
@@ -69,7 +69,8 @@ export default class SymptomsSheet extends React.Component{
                         <Left>
                         <View>
                             <Text style={{...styles.text,...styles.ownColor}}>{Messages('callYourPolice', this.props.language)}</Text>
-                            {this.props.inspectUsers.map((inspectUser,key)=><Text key={key} style={{...styles.mobileText,...styles.ownColor}}>{`${inspectUser.name}-${inspectUser.mobile}`}</Text>)}
+                            {this.props.inspectUsers.map((inspectUser,key)=><Text key={key} style={{...styles.mobileText,...styles.ownColor}}>
+                            {`${inspectUser.officeId ? `[${inspectUser.officeId}] ` : ""}${inspectUser.name? `${inspectUser.name} ` : ""}${inspectUser.mobile? inspectUser.mobile : ""}`}</Text>)}
                             
                         </View>
                         </Left>
@@ -113,9 +114,9 @@ export default class SymptomsSheet extends React.Component{
                 <DialogContent>
                     {
                         this.props.inspectUsers.map((inspectUser,key)=>(
-                            <Button success style={styles.callMoreButton} key={key} onPress={()=>this.onHandleClick(inspectUser.mobile)}>
+                            inspectUser.mobile && <Button success style={styles.callMoreButton} key={key} onPress={()=>this.onHandleClick(inspectUser.mobile)}>
                                 <View style={styles.callMoreView}>
-                                    <Text style={styles.callMoreText}>{inspectUser.name}</Text>
+                                    <Text style={styles.callMoreText}>{`${inspectUser.officeId ? `[${inspectUser.officeId}] ` : ""}${inspectUser.name? `${inspectUser.name} ` : ""}`}</Text>
                                     <Text style={styles.callMoreText}>{inspectUser.mobile}</Text>
                                 </View>
                             </Button>

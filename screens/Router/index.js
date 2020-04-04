@@ -72,6 +72,7 @@ export default class Router extends React.Component{
                 isAuthenticated,
                 token,
                 inspectUsers,
+                name,
                 registeredDate
             } = response;
             if(isAuthenticated){
@@ -80,6 +81,7 @@ export default class Router extends React.Component{
                     qNumber,
                     token,
                     inspectUsers,
+                    name,
                     remainingDays: 14,
                     isRegistrationError:false
                 })
