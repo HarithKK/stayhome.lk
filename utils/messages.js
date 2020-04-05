@@ -39,6 +39,11 @@ const messages = {
         si: 'නැත',
         ti: 'இல்லை'
     },
+    ok: {
+        en: 'OK',
+        si: 'හරි',
+        ti: 'சரி'
+    },
     moreDays:{
         en: 'Days more ...',
         si: 'යි තව දවස් ...',
@@ -213,6 +218,16 @@ const messages = {
         en: 'Location Disabled',
         si: 'ස්ථාන සංවේදකය අක්‍රීයයි',
         ti: 'இருப்பிட சென்சார் முடக்கப்பட்டது'
+    },
+    accept:{
+        en: 'Accepted',
+        si: 'පිළිගෙන ඉදිරියට',
+        ti: 'ஏற்றுக்கொள்ளப்பட்டது'
+    },
+    acceptance:{
+        en: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+        si: `ලොරම් ඉප්සම් යනු මුද්‍රණ හා යතුරු ලියන කර්මාන්තයේ ව්‍යාජ පා text යකි. ලෝරම් ඉප්සම් යනු 1500 දශකයේ සිට කර්මාන්තයේ සම්මත ව්‍යාජ පා text ය වන අතර, නාඳුනන මුද්‍රණ යන්ත්‍රයක් ගැලී වර්ගයක් ගෙන එය නිදර්ශක පොතක් සෑදීම සඳහා සීරීමට ලක් කළේය. එය ශතවර්ෂ පහක් පමණක් නොව ඉලෙක්ට්‍රොනික් යතුරුලියනය සඳහා වූ පිම්ම ද නොනැසී පවතී. 1960 දශකයේ දී ලෝරම් ඉප්සම් ඡේද අඩංගු ලෙට්‍රසෙට් ෂීට් නිකුත් කිරීමත්, මෑතකදී ඇල්ඩස් පේජ්මේකර් වැනි ඩෙස්ක්ටොප් ප්‍රකාශන මෘදුකාංග සමඟ ලොරම් ඉප්සම්ගේ අනුවාදයන්ත් සමඟ එය ජනප්‍රිය විය.`,
+        ti: `லோரெம் இப்சம் என்பது அச்சிடுதல் மற்றும் தட்டச்சு செய்யும் துறையின் போலி உரை. லோரெம் இப்சம் 1500 களில் இருந்தே தொழில்துறையின் நிலையான போலி உரையாக இருந்து வருகிறது, ஒரு அறியப்படாத அச்சுப்பொறி ஒரு வகை கேலியை எடுத்து ஒரு வகை மாதிரி புத்தகத்தை உருவாக்க அதை துருவிக் கொண்டது. இது ஐந்து நூற்றாண்டுகள் மட்டுமல்லாமல், எலக்ட்ரானிக் டைப் செட்டிங்கிற்கான பாய்ச்சலும் தப்பிப்பிழைத்தது, அடிப்படையில் மாறாமல் உள்ளது. இது 1960 களில் லோரெம் இப்சம் பத்திகளைக் கொண்ட லெட்ராசெட் தாள்களை வெளியிடுவதன் மூலம் பிரபலப்படுத்தப்பட்டது, மேலும் சமீபத்தில் லோரெம் இப்சம் பதிப்புகள் உட்பட ஆல்டஸ் பேஜ்மேக்கர் போன்ற டெஸ்க்டாப் வெளியீட்டு மென்பொருளுடன் பிரபலப்படுத்தப்பட்டது.`
     }
 }
 

@@ -21,6 +21,7 @@ export default class Router extends React.Component{
             inspectUsers: [],
             remainingNumberOfDays: 0,
             showRemaining: false,
+            acceptance: false,
             token:""
         }
 
@@ -37,8 +38,9 @@ export default class Router extends React.Component{
         const qNumber = await _retrieveData(constants.storeKeys.QNumber);
         const token = await _retrieveData(constants.storeKeys.RegisterToken);
         const registeredDate = await _retrieveData(constants.storeKeys.registeredDate);
-
-        if(!qNumber || !token || !registeredDate){
+        const acceptance = await _retrieveData(constants.storeKeys.acceptance);
+        
+        if(!qNumber || !token || !registeredDate || !acceptance){
             this.setState({isLoading: false, qNumber: null})
             return;
         }else{
@@ -50,6 +52,7 @@ export default class Router extends React.Component{
                 isLoading: false, 
                 qNumber,
                 inspectUsers,
+                acceptance,
                 remainingDays: remainingDays>14 ? 0 : (14-remainingDays),
                 token
             })
@@ -64,7 +67,9 @@ export default class Router extends React.Component{
         this.setState({isLoading: true})
     }
 
-    async registerPatient(qNumber){
+    async registerPatient(qNumber,language,acceptance){
+        this.props.changeLanguageById(language);
+        this.setState({acceptance})
         this.setLoadingTrue();
         const response = await register(qNumber);
         this.setLoadingFalse();
@@ -90,6 +95,7 @@ export default class Router extends React.Component{
                 await _storeData(constants.storeKeys.QNumber,qNumber);
                 await _storeData(constants.storeKeys.RegisterToken,token);
                 await _storeData(constants.storeKeys.registeredDate,`${registeredDate}`);
+                await _storeData(constants.storeKeys.acceptance,`${acceptance}`);
             }else{
                 this.setState({isRegistrationError:true})
             }
@@ -127,7 +133,8 @@ export default class Router extends React.Component{
         this.setState({qNumber: null});
         await _removeData(constants.storeKeys.qNumber);
         await _removeData(constants.storeKeys.RegisterToken);
-        await _removeData(constants.storeKeys.registeredDate);
+        await _removeData(constants.storeKeys.registeredDate)
+        await _removeData(constants.storeKeys.acceptance)
         this.props.logoutCompleted();
     }
 
@@ -149,9 +156,10 @@ export default class Router extends React.Component{
 
         if(!this.state.qNumber){
             return <Register
-                registerPatient={(qNumber)=>this.registerPatient(qNumber)}
+                registerPatient={(qNumber,language,acceptance)=>this.registerPatient(qNumber,language,acceptance)}
                 isRegistrationError={this.state.isRegistrationError}
                 language={this.props.language}
+                acceptance={this.state.acceptance}
             />
         }
         return <Tabs 

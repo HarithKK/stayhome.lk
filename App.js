@@ -45,10 +45,7 @@ export default class App extends React.Component {
     this.logoutCompleted=this.logoutCompleted.bind(this);
     this.changeLanguage=this.changeLanguage.bind(this);
     this.checkLocationServiceContinuously = this.checkLocationServiceContinuously.bind(this);
-  }
-
-  componentWillUnmount(){
-    unregisterLocationUpdateTask();
+    this.changeLanguageById = this.changeLanguageById.bind(this);
   }
 
   async componentDidMount() {
@@ -69,9 +66,6 @@ export default class App extends React.Component {
     this.checkLocationServiceContinuously();
 
     let language = await _retrieveData(constants.storeKeys.Language);
-    if(!language){
-      language='en';
-    }
     this.setState({ 
         isReady: true,
         networkState: {
@@ -122,6 +116,10 @@ export default class App extends React.Component {
     this.setState({language});
   }
 
+  async changeLanguageById(language){
+    this.setState({language});
+  }
+
   render() {
     if (!this.state.isReady) {
       return <AppLoading />;
@@ -163,7 +161,8 @@ export default class App extends React.Component {
           logoutCompleted={this.logoutCompleted}
           logoutError={this.logoutError}
           language={this.state.language}
-          changeLanguage={this.changeLanguage}/>
+          changeLanguage={this.changeLanguage}
+          changeLanguageById={this.changeLanguageById}/>
         </Container>
       </StyleProvider>
     );

@@ -6,8 +6,7 @@ var token =null;
 
 export const setToken = (t) => token =t;
 
-registerLocationUpdateTask = () =>{
-  unregisterLocationUpdateTask();
+registerLocationUpdateTask = async () =>{
   TaskManager.defineTask(constants.tasks.LOCATION_UPDATE, async ({ data: { locations }, error }) => {
     if (error || !token) {
       return;
@@ -16,14 +15,11 @@ registerLocationUpdateTask = () =>{
   });
 }
 
-export const unregisterLocationUpdateTask = () => {
-  if(TaskManager.isTaskRegisteredAsync(constants.tasks.LOCATION_UPDATE)){
-    TaskManager.unregisterTaskAsync(constants.tasks.LOCATION_UPDATE)
+export const unregisterLocationUpdateTask = async () => {
+  const isTaskAvailable = await TaskManager.isTaskRegisteredAsync(constants.tasks.LOCATION_UPDATE);
+  if(isTaskAvailable){
+    await TaskManager.unregisterTaskAsync(constants.tasks.LOCATION_UPDATE)
   }
 }
 
-try{
-  registerLocationUpdateTask();
-}catch(e){
-
-}
+registerLocationUpdateTask();

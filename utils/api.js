@@ -147,7 +147,6 @@ export const updateLocation = async (locations,token)=>{
         }
         return true;
     }catch(e){
-        console.error(e);
         return null;
     }
 }

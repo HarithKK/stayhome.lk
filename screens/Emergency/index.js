@@ -1,6 +1,6 @@
 import React from 'react';
 import { Linking } from 'expo';
-import Dialog, { SlideAnimation, DialogContent, DialogFooter, DialogButton } from 'react-native-popup-dialog';
+import Dialog, { DialogContent, DialogFooter, DialogButton } from 'react-native-popup-dialog';
 import { Content, Text,Card,CardItem, Right, View, Body, Button, Icon, Left } from 'native-base';
 import colors from '../../native-base-theme/variables/material';
 import Header from '../components/Header';
