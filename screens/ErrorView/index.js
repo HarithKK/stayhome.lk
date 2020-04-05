@@ -7,7 +7,8 @@ export const ERROR_CODES = {
     NO_NETWORK: 'NO_NETWORK',
     NO_INTERNET: 'NO_INTERNET',
     SUBMIT_ERROR: 'SUBMIT_ERROR',
-    LOGOUT_ERROR: 'LOGOUT_ERROR'
+    LOGOUT_ERROR: 'LOGOUT_ERROR',
+    LOCATION_ERROR: 'LOCATION_ERROR'
 }
 
 const styles = {
@@ -49,6 +50,13 @@ export default ({type,language}) => {
                 message: Messages('logoutError', language)
             };
             break;
+        case ERROR_CODES.LOCATION_ERROR:
+            data = {
+                iconName: 'location-off',
+                iconType: 'MaterialIcons',
+                message: Messages('locationError', language)
+            };
+            break;
         default:
             data = {
                 iconName: 'exclamation',
@@ -59,7 +67,7 @@ export default ({type,language}) => {
     
 
     return <Content contentContainerStyle={styles.container}>
-                <Icon danger name={data.iconName} type="MaterialCommunityIcons" style={styles.icon} />
+                <Icon danger name={data.iconName} type={data.iconType || 'MaterialCommunityIcons'} style={styles.icon} />
                 <Text style={styles.text}>{data.message}</Text>
             </Content>
 }

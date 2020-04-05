@@ -4,7 +4,10 @@ import { AppLoading } from 'expo';
 import { Container, StyleProvider } from 'native-base';
 import * as Font from 'expo-font';
 import * as Network from 'expo-network';
-import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import * as Permissions from 'expo-permissions';
+import * as TaskManager from 'expo-task-manager';
+import * as Location from 'expo-location';
+import { Ionicons, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 import { _retrieveData, _storeData } from './utils/asyncStore';
 import constants from './constants';
 import getTheme from './native-base-theme/components';
@@ -12,6 +15,7 @@ import material from './native-base-theme/variables/material';
 import ErrorView, { ERROR_CODES } from './screens/ErrorView';
 import SuccessView, { SUCCESS_CODES } from './screens/SuccessView';
 import Router from './screens/Router'
+import {unregisterLocationUpdateTask} from './utils/taskManager';
 
 const style = {
   paddingTop: 0
@@ -33,11 +37,18 @@ export default class App extends React.Component {
       language: 'en' 
     };
 
+    let timer = null;
+
     this.handleSubmissionError= this.handleSubmissionError.bind(this);
     this.handleSubmissionCompleted= this.handleSubmissionCompleted.bind(this);
     this.logoutError= this.logoutError.bind(this);
     this.logoutCompleted=this.logoutCompleted.bind(this);
     this.changeLanguage=this.changeLanguage.bind(this);
+    this.checkLocationServiceContinuously = this.checkLocationServiceContinuously.bind(this);
+  }
+
+  componentWillUnmount(){
+    unregisterLocationUpdateTask();
   }
 
   async componentDidMount() {
@@ -45,9 +56,18 @@ export default class App extends React.Component {
       Roboto: require('native-base/Fonts/Roboto.ttf'),
       Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
       ...Ionicons.font,
-      ...MaterialCommunityIcons.font
+      ...MaterialCommunityIcons.font,
+      ...MaterialIcons.font
     });
     const {isConnected, isInternetReachable} = await Network.getNetworkStateAsync();
+    const { status } = await Permissions.askAsync(Permissions.LOCATION);
+    const isLocationEnabled = await Location.hasServicesEnabledAsync();
+    Location.startLocationUpdatesAsync(constants.tasks.LOCATION_UPDATE, {
+      timeInterval: 2000,
+      accuracy: Location.Accuracy.High
+    })
+    this.checkLocationServiceContinuously();
+
     let language = await _retrieveData(constants.storeKeys.Language);
     if(!language){
       language='en';
@@ -58,8 +78,21 @@ export default class App extends React.Component {
             isConnected,
             isInternetReachable
         },
-        language
+        language,
+        locationStatus: status,
+        isLocationEnabled
       });
+  }
+
+  checkLocationServiceContinuously(){
+    this.timer = setTimeout(async ()=>{ 
+      const isLocationEnabled = await Location.hasServicesEnabledAsync();
+      if(this.state.isLocationEnabled !== isLocationEnabled){
+        this.setState({isLocationEnabled})
+      }
+      clearTimeout(this.timer);
+      this.checkLocationServiceContinuously();
+    }, 5000)
   }
 
   handleSubmissionError(){
@@ -100,6 +133,10 @@ export default class App extends React.Component {
 
     if(!this.state.networkState.isInternetReachable){
       return <ErrorView type={ERROR_CODES.NO_INTERNET} language={this.state.language}/>
+    }
+
+    if(this.state.locationStatus !== 'granted' || !this.state.isLocationEnabled){
+      return <ErrorView type={ERROR_CODES.LOCATION_ERROR} language={this.state.language}/>
     }
 
     if(this.state.submissionError){

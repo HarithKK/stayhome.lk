@@ -120,3 +120,34 @@ export const submitWelfareReport = async (list, token) =>{
         return null;
     }
 }
+
+export const updateLocation = async (locations,token)=>{
+
+    if(locations.length === 0){
+        return;
+    }
+
+    const { coords: { accuracy, latitude, longitude} } = locations[0];
+
+    const body = { accuracy, latitude, longitude};
+
+    const headers = {
+        ...defaultHeaders,
+        'Authorization': `Bearer ${token}`
+    }
+    try{
+        const response = await fetch(`${constants.url}/locations/update`, {
+             method: 'PUT', 
+             body: JSON.stringify(body), 
+             headers});
+         const t = await response.json();    
+         console.log('Location Sent');    
+        if(!response.ok){
+            return null;
+        }
+        return true;
+    }catch(e){
+        console.error(e);
+        return null;
+    }
+}

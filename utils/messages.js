@@ -208,6 +208,11 @@ const messages = {
         en: 'Send Request',
         si: 'ඉල්ලීම යවන්න',
         ti: 'கோரிக்கையை அனுப்புங்கள்'
+    },
+    locationError:{
+        en: 'Location Disabled',
+        si: 'ස්ථාන සංවේදකය අක්‍රීයයි',
+        ti: 'இருப்பிட சென்சார் முடக்கப்பட்டது'
     }
 }
 

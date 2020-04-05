@@ -7,6 +7,7 @@ import Register from '../Register';
 import Tabs from '../Tabs';
 import RemainingTime from '../RemainingTime';
 import { register, submitReport, unregister, submitWelfareReport } from '../../utils/api';
+import { setToken } from '../../utils/taskManager';
 
 export default class Router extends React.Component{
 
@@ -44,7 +45,7 @@ export default class Router extends React.Component{
             const today = new Date().getTime();
             const remainingDays = Math.round((today - Number(registeredDate))/(60*60*24*1000));
             const { inspectUsers }= jwt_decode(token);
-
+            setToken(token);
             this.setState({
                 isLoading: false, 
                 qNumber,
@@ -76,6 +77,7 @@ export default class Router extends React.Component{
                 registeredDate
             } = response;
             if(isAuthenticated){
+                setToken(token);
                 this.setState({
                     isLoading: false, 
                     qNumber,

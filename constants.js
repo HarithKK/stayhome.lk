@@ -7,6 +7,9 @@ export default {
         registeredDate: 'REGISTERED_DATE',
         Language: 'LANGUAGE'
     },
+    tasks:{
+        LOCATION_UPDATE: 'LOCATION_UPDATE'
+    },
     url: 'http://18.138.48.140/qms',
     languages:[
         'si',
