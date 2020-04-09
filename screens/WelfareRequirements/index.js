@@ -1,5 +1,4 @@
 import React from 'react';
-import { Linking } from 'expo';
 import { Content, Text,Card,CardItem, Right, View, Body, Button, Icon, Left, List, ListItem, Input, Row, Col } from 'native-base';
 import colors from '../../native-base-theme/variables/material';
 import Header from '../components/Header';

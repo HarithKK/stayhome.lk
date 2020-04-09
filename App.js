@@ -1,11 +1,9 @@
 import React from 'react';
 import { Platform, StatusBar } from 'react-native';
-import { AppLoading } from 'expo';
 import { Container, StyleProvider } from 'native-base';
 import * as Font from 'expo-font';
 import * as Network from 'expo-network';
 import * as Permissions from 'expo-permissions';
-import * as TaskManager from 'expo-task-manager';
 import * as Location from 'expo-location';
 import { Ionicons, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 import { _retrieveData, _storeData } from './utils/asyncStore';
@@ -122,7 +120,7 @@ export default class App extends React.Component {
 
   render() {
     if (!this.state.isReady) {
-      return <AppLoading />;
+      return null;
     }
 
     if(!this.state.networkState.isConnected){

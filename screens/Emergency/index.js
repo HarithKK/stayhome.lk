@@ -1,5 +1,4 @@
 import React from 'react';
-import { Linking } from 'expo';
 import Dialog, { DialogContent, DialogFooter, DialogButton } from 'react-native-popup-dialog';
 import { Content, Text,Card,CardItem, Right, View, Body, Button, Icon, Left } from 'native-base';
 import colors from '../../native-base-theme/variables/material';
@@ -48,7 +47,7 @@ export default class SymptomsSheet extends React.Component{
 
     onHandleClick(number){
         this.setState({visible:false})
-        Linking.openURL(`tel:${number}`);
+        //Linking.openURL(`tel:${number}`);
     }
 
     render(){
