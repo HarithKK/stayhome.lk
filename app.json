@@ -30,6 +30,9 @@
     "android": {
       "package": "com.uom.stayhome",
       "versionCode": 1
-    }
-  }
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "Stay Home LK",
+  "name": "stay_home_lk"
 }
