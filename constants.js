@@ -11,7 +11,7 @@ export default {
     tasks:{
         LOCATION_UPDATE: 'LOCATION_UPDATE'
     },
-    url: 'http://35.202.26.174:3000/pansiluEnd',// 'http://18.138.48.140/qms',
+    url: 'http://18.138.48.140/qms',
     languages:[
         'si',
         'en',

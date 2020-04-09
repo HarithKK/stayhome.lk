@@ -63,7 +63,7 @@ export default class App extends React.Component {
     })
     this.checkLocationServiceContinuously();
 
-    let language = await _retrieveData(constants.storeKeys.Language);
+    let language = await _retrieveData(constants.storeKeys.Language) || 'en';
     this.setState({ 
         isReady: true,
         networkState: {

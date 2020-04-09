@@ -1,0 +1,521 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:1-48:12
+MERGED from [:expo-permissions] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-screens] /home/kwar0715/contribute/stayhome.lk/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-react-native-adapter] /home/kwar0715/contribute/stayhome.lk/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] /home/kwar0715/contribute/stayhome.lk/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] /home/kwar0715/contribute/stayhome.lk/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.61.5] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/23c80e33930c792908737cc6f2724b9a/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1ec44b085adc0d5bf3541ccc5af12723/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/736a80cf5cbcdc97d010a044ec105b14/AndroidManifest.xml:17:1-24:12
+MERGED from [:expo-app-loader-provider] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-app-loader-provider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-constants] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-constants/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-error-recovery] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-error-recovery/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-30:12
+MERGED from [:expo-font] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-font/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-keep-awake] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-linear-gradient] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:expo-network] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-network/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:expo-sqlite] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-sqlite/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-web-browser] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-web-browser/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-barcode-scanner-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-barcode-scanner-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-camera-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-camera-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-constants-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-constants-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-face-detector-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-face-detector-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-file-system-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-file-system-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-font-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-font-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-permissions-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-permissions-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-task-manager-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-task-manager-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-core] /home/kwar0715/contribute/stayhome.lk/node_modules/@unimodules/core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-image-loader-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-image-loader-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-sensors-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-sensors-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [org.webkit:android-jsc:r245459] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/android-jsc-r245459.aar/551e5867467edccfe289da412fcaf35f/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.browser:browser:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/aec6f128eff1f80c0b753c707c0e1378/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/transition-1.1.0.aar/fbab204b494b110fdcb74881968cd3d4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/145bc84d8648fa1607150371b95a4037/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/f48125bef30c45e303d21a0bc894d731/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/fee244f494846a7df1ba7273c8f3698e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/2cd2366b2b5e2f0a66e525c20e838466/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/1c903984194d9f1b6794bd4663febe76/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/f57881c85378658264793bdaa27bfb9a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/5a192add71d13ebee8120b9966e9cc12/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/c06fc2e1f958f8d80b77dd30dce00483/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/0a090b7d24f8bbda8aca6da37ddc2042/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/1d75d1b31b27a7b53d55575ca8d2375d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/24dec64a1fe2065a71b0de23dcaaa6f2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/3b86def1747faca20139b05e6909a631/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/7f9d9b8502d5f518afdde4f5d36e9456/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/appcompat-resources-1.1.0.aar/6b46f19e6e92afcd4c67f92fda884449/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.1.0.aar/7310a9d5211804621f42e616854a7b0f/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/315fc572e2d0985cd21d555f2809a358/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0.aar/5d7fd6281a2cf2798ada374f46bfc486/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/29447812e2ac62250a5a0bb5b371c6ef/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/9d3098d675c82ff99e0935686000ac36/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/1d7363f9f18ba2c2e4791fb5a24f042a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/0df15eb8f6b5034b70ccf34118dd0eb3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/8a82d13c3990546e0fa5fd99d756cd2c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/269ffb5d9275c7a5b0f96936e662443c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/activity-1.0.0.aar/af53dc5a8944fff8a4eb6f0c5b76d5ed/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.1.0.aar/2a2f745cb573eb4e718c874d861f4df9/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/082b9811464b67b3e0b284bfb77f0a21/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/3ee1fbb65d4f5b871397f2a508a33c6f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/64effa2f05a716988883748b787bf87e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/bcfa5236f8f7ae77a5cf73fa382b83d8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/62a8a7fd8c5b55ce6b455f49cd768c5e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/0a8c437ed753ecf6865d6f6e7894c5d7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2e284795689ea695b41fb4353ddb49f8/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0.aar/05f280fbc8c8965af2c3929961913ba1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/73a6e370ed44f906a70d3ecb6d553e76/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0.aar/d6026f3266fc911c71c53e4db8e7d12d/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/974418d32e5e98d31f029335fcd32bdc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/a2c7247115d718335d13b3bccd45cb02/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/e5ab0c106568a06c0637cff377a95115/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/724683bc4e096d20b5b9cd277d4fcdcd/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/fresco-2.0.0.aar/63282fd1191aad5528f75d14f8418842/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-2.0.0.aar/e93e287728fee0588852fc8fd92d18da/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/drawee-2.0.0.aar/f7656cb89b1f70a3a9ee3b3b00d2095e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/nativeimagefilters-2.0.0.aar/b39cd4785a7413b830ee18484d7d61c0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/imagepipeline-2.0.0.aar/b39a97356ea04f7c4a9a955b4f079657/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/nativeimagetranscoder-2.0.0.aar/c3f5fad4424e110ef85a5d524cbd1292/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-2.0.0.aar/df61aabbb37c3030aae68f59360dd0ed/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9e3841019c4133e4c44a02f136d9336d/AndroidManifest.xml:2:1-13:12
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:2:1-30:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-fbcore-2.0.0.aar/fb7914e42b9ff1008eee8422529b8d91/AndroidManifest.xml:2:1-9:12
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:1-48:12
+	package
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:2:5-31
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:1-48:12
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:1-48:12
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:8:22-72
+uses-permission#android.permission.READ_INTERNAL_STORAGE
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:9:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:10:22-72
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:11:5-74
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:11:22-71
+uses-permission#android.permission.VIBRATE
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:12:5-66
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:12:22-63
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:13:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:16:5-81
+MERGED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+MERGED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:12:5-81
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:16:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:17:5-79
+MERGED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
+MERGED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:14:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:17:22-76
+uses-permission#android.permission.CAMERA
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:18:5-65
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:18:22-62
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:19:5-72
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:19:22-69
+uses-permission#android.permission.READ_CALENDAR
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:20:5-72
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:20:22-69
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:21:5-73
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:21:22-70
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:22:5-80
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:22:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:23:5-71
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:23:22-68
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:24:5-81
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:24:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:25:5-73
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:25:22-70
+application
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:28:5-46:19
+MERGED from [com.facebook.react:react-native:0.61.5] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/23c80e33930c792908737cc6f2724b9a/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/23c80e33930c792908737cc6f2724b9a/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1ec44b085adc0d5bf3541ccc5af12723/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1ec44b085adc0d5bf3541ccc5af12723/AndroidManifest.xml:22:5-20
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-28:19
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-28:19
+MERGED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-19:19
+MERGED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-19:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/145bc84d8648fa1607150371b95a4037/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/145bc84d8648fa1607150371b95a4037/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/f48125bef30c45e303d21a0bc894d731/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/f48125bef30c45e303d21a0bc894d731/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/fee244f494846a7df1ba7273c8f3698e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/fee244f494846a7df1ba7273c8f3698e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/2cd2366b2b5e2f0a66e525c20e838466/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/2cd2366b2b5e2f0a66e525c20e838466/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/1c903984194d9f1b6794bd4663febe76/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/1c903984194d9f1b6794bd4663febe76/AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/7f9d9b8502d5f518afdde4f5d36e9456/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/7f9d9b8502d5f518afdde4f5d36e9456/AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/082b9811464b67b3e0b284bfb77f0a21/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/082b9811464b67b3e0b284bfb77f0a21/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2e284795689ea695b41fb4353ddb49f8/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2e284795689ea695b41fb4353ddb49f8/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/724683bc4e096d20b5b9cd277d4fcdcd/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/724683bc4e096d20b5b9cd277d4fcdcd/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9e3841019c4133e4c44a02f136d9336d/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9e3841019c4133e4c44a02f136d9336d/AndroidManifest.xml:11:5-20
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:18:5-28:19
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:18:5-28:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/082b9811464b67b3e0b284bfb77f0a21/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:30:7-39
+	android:roundIcon
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:32:7-52
+	android:icon
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:31:7-41
+	android:allowBackup
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:33:7-34
+	android:theme
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:34:7-38
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:29:7-38
+activity#com.stay_home_lk.MainActivity
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:35:7-44:18
+	android:label
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:37:9-41
+	android:windowSoftInputMode
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:39:9-51
+	android:configChanges
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:38:9-79
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:36:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:40:9-43:25
+action#android.intent.action.MAIN
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:41:13-65
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:41:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:42:13-73
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:42:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:45:7-84
+	android:name
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml:45:17-81
+uses-sdk
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+MERGED from [:expo-permissions] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-permissions] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /home/kwar0715/contribute/stayhome.lk/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /home/kwar0715/contribute/stayhome.lk/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-react-native-adapter] /home/kwar0715/contribute/stayhome.lk/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-react-native-adapter] /home/kwar0715/contribute/stayhome.lk/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/kwar0715/contribute/stayhome.lk/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/kwar0715/contribute/stayhome.lk/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /home/kwar0715/contribute/stayhome.lk/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /home/kwar0715/contribute/stayhome.lk/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/23c80e33930c792908737cc6f2724b9a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/23c80e33930c792908737cc6f2724b9a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1ec44b085adc0d5bf3541ccc5af12723/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1ec44b085adc0d5bf3541ccc5af12723/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/736a80cf5cbcdc97d010a044ec105b14/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/736a80cf5cbcdc97d010a044ec105b14/AndroidManifest.xml:20:5-22:41
+MERGED from [:expo-app-loader-provider] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-app-loader-provider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-app-loader-provider] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-app-loader-provider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-constants] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-constants/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-constants] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-constants/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-error-recovery] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-error-recovery/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-error-recovery] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-error-recovery/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:expo-font] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-font/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-font] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-font/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-keep-awake] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-keep-awake] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-linear-gradient] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-linear-gradient] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-network] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-network/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-network] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-network/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-sqlite] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-sqlite/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-sqlite] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-sqlite/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-web-browser] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-web-browser/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-web-browser] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-web-browser/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-barcode-scanner-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-barcode-scanner-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-barcode-scanner-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-barcode-scanner-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-camera-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-camera-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-camera-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-camera-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-constants-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-constants-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-constants-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-constants-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-face-detector-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-face-detector-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-face-detector-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-face-detector-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-file-system-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-file-system-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-file-system-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-file-system-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-font-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-font-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-font-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-font-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-permissions-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-permissions-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-permissions-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-permissions-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-task-manager-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-task-manager-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-task-manager-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-task-manager-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-core] /home/kwar0715/contribute/stayhome.lk/node_modules/@unimodules/core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-core] /home/kwar0715/contribute/stayhome.lk/node_modules/@unimodules/core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-image-loader-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-image-loader-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-image-loader-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-image-loader-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-sensors-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-sensors-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-sensors-interface] /home/kwar0715/contribute/stayhome.lk/node_modules/unimodules-sensors-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/android-jsc-r245459.aar/551e5867467edccfe289da412fcaf35f/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/android-jsc-r245459.aar/551e5867467edccfe289da412fcaf35f/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.browser:browser:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/aec6f128eff1f80c0b753c707c0e1378/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/aec6f128eff1f80c0b753c707c0e1378/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/transition-1.1.0.aar/fbab204b494b110fdcb74881968cd3d4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/transition-1.1.0.aar/fbab204b494b110fdcb74881968cd3d4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/145bc84d8648fa1607150371b95a4037/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/145bc84d8648fa1607150371b95a4037/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/f48125bef30c45e303d21a0bc894d731/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/f48125bef30c45e303d21a0bc894d731/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/fee244f494846a7df1ba7273c8f3698e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/fee244f494846a7df1ba7273c8f3698e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/2cd2366b2b5e2f0a66e525c20e838466/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/2cd2366b2b5e2f0a66e525c20e838466/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/1c903984194d9f1b6794bd4663febe76/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/1c903984194d9f1b6794bd4663febe76/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/f57881c85378658264793bdaa27bfb9a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/f57881c85378658264793bdaa27bfb9a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/5a192add71d13ebee8120b9966e9cc12/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/5a192add71d13ebee8120b9966e9cc12/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/c06fc2e1f958f8d80b77dd30dce00483/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/c06fc2e1f958f8d80b77dd30dce00483/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/0a090b7d24f8bbda8aca6da37ddc2042/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/0a090b7d24f8bbda8aca6da37ddc2042/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/1d75d1b31b27a7b53d55575ca8d2375d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/1d75d1b31b27a7b53d55575ca8d2375d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/24dec64a1fe2065a71b0de23dcaaa6f2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/24dec64a1fe2065a71b0de23dcaaa6f2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/3b86def1747faca20139b05e6909a631/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/3b86def1747faca20139b05e6909a631/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/7f9d9b8502d5f518afdde4f5d36e9456/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/7f9d9b8502d5f518afdde4f5d36e9456/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/appcompat-resources-1.1.0.aar/6b46f19e6e92afcd4c67f92fda884449/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/appcompat-resources-1.1.0.aar/6b46f19e6e92afcd4c67f92fda884449/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.1.0.aar/7310a9d5211804621f42e616854a7b0f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.1.0.aar/7310a9d5211804621f42e616854a7b0f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/315fc572e2d0985cd21d555f2809a358/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/315fc572e2d0985cd21d555f2809a358/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0.aar/5d7fd6281a2cf2798ada374f46bfc486/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0.aar/5d7fd6281a2cf2798ada374f46bfc486/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/29447812e2ac62250a5a0bb5b371c6ef/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/29447812e2ac62250a5a0bb5b371c6ef/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/9d3098d675c82ff99e0935686000ac36/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/9d3098d675c82ff99e0935686000ac36/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/1d7363f9f18ba2c2e4791fb5a24f042a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/1d7363f9f18ba2c2e4791fb5a24f042a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/0df15eb8f6b5034b70ccf34118dd0eb3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/0df15eb8f6b5034b70ccf34118dd0eb3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/8a82d13c3990546e0fa5fd99d756cd2c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/8a82d13c3990546e0fa5fd99d756cd2c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/269ffb5d9275c7a5b0f96936e662443c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/269ffb5d9275c7a5b0f96936e662443c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/activity-1.0.0.aar/af53dc5a8944fff8a4eb6f0c5b76d5ed/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/activity-1.0.0.aar/af53dc5a8944fff8a4eb6f0c5b76d5ed/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.1.0.aar/2a2f745cb573eb4e718c874d861f4df9/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.1.0.aar/2a2f745cb573eb4e718c874d861f4df9/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/082b9811464b67b3e0b284bfb77f0a21/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/082b9811464b67b3e0b284bfb77f0a21/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/3ee1fbb65d4f5b871397f2a508a33c6f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/3ee1fbb65d4f5b871397f2a508a33c6f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/64effa2f05a716988883748b787bf87e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/64effa2f05a716988883748b787bf87e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/bcfa5236f8f7ae77a5cf73fa382b83d8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/bcfa5236f8f7ae77a5cf73fa382b83d8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/62a8a7fd8c5b55ce6b455f49cd768c5e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/62a8a7fd8c5b55ce6b455f49cd768c5e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/0a8c437ed753ecf6865d6f6e7894c5d7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/0a8c437ed753ecf6865d6f6e7894c5d7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2e284795689ea695b41fb4353ddb49f8/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2e284795689ea695b41fb4353ddb49f8/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0.aar/05f280fbc8c8965af2c3929961913ba1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0.aar/05f280fbc8c8965af2c3929961913ba1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/73a6e370ed44f906a70d3ecb6d553e76/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/73a6e370ed44f906a70d3ecb6d553e76/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0.aar/d6026f3266fc911c71c53e4db8e7d12d/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0.aar/d6026f3266fc911c71c53e4db8e7d12d/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/974418d32e5e98d31f029335fcd32bdc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/974418d32e5e98d31f029335fcd32bdc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/a2c7247115d718335d13b3bccd45cb02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/a2c7247115d718335d13b3bccd45cb02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/e5ab0c106568a06c0637cff377a95115/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/e5ab0c106568a06c0637cff377a95115/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/724683bc4e096d20b5b9cd277d4fcdcd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/724683bc4e096d20b5b9cd277d4fcdcd/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/fresco-2.0.0.aar/63282fd1191aad5528f75d14f8418842/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/fresco-2.0.0.aar/63282fd1191aad5528f75d14f8418842/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-2.0.0.aar/e93e287728fee0588852fc8fd92d18da/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-2.0.0.aar/e93e287728fee0588852fc8fd92d18da/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/drawee-2.0.0.aar/f7656cb89b1f70a3a9ee3b3b00d2095e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/drawee-2.0.0.aar/f7656cb89b1f70a3a9ee3b3b00d2095e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/nativeimagefilters-2.0.0.aar/b39cd4785a7413b830ee18484d7d61c0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/nativeimagefilters-2.0.0.aar/b39cd4785a7413b830ee18484d7d61c0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/imagepipeline-2.0.0.aar/b39a97356ea04f7c4a9a955b4f079657/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/imagepipeline-2.0.0.aar/b39a97356ea04f7c4a9a955b4f079657/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/nativeimagetranscoder-2.0.0.aar/c3f5fad4424e110ef85a5d524cbd1292/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/nativeimagetranscoder-2.0.0.aar/c3f5fad4424e110ef85a5d524cbd1292/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-2.0.0.aar/df61aabbb37c3030aae68f59360dd0ed/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-2.0.0.aar/df61aabbb37c3030aae68f59360dd0ed/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9e3841019c4133e4c44a02f136d9336d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/9e3841019c4133e4c44a02f136d9336d/AndroidManifest.xml:7:5-9:41
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:8:5-10:41
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-fbcore-2.0.0.aar/fb7914e42b9ff1008eee8422529b8d91/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-fbcore-2.0.0.aar/fb7914e42b9ff1008eee8422529b8d91/AndroidManifest.xml:5:5-7:41
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kwar0715/contribute/stayhome.lk/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.STORAGE
+ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
+provider#expo.modules.filesystem.FileSystemFileProvider
+ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
+	android:grantUriPermissions
+		ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
+	android:authorities
+		ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
+	android:exported
+		ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+	tools:replace
+		ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-48
+	android:name
+		ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-26:70
+	android:resource
+		ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:17-67
+	android:name
+		ADDED from [:expo-file-system] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:17-67
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-74
+service#expo.modules.location.services.LocationTaskService
+ADDED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+	android:exported
+		ADDED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:expo-location] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:expo-network] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-network/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from [:expo-network] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-network/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:expo-network] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-network/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:13:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [:expo-network] /home/kwar0715/contribute/stayhome.lk/node_modules/expo-network/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-76
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/f48125bef30c45e303d21a0bc894d731/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/f48125bef30c45e303d21a0bc894d731/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/f48125bef30c45e303d21a0bc894d731/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/f48125bef30c45e303d21a0bc894d731/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/1c903984194d9f1b6794bd4663febe76/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/1c903984194d9f1b6794bd4663febe76/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/1c903984194d9f1b6794bd4663febe76/AndroidManifest.xml:24:13-58
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:15:5-98
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:15:22-95
+uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:16:5-94
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:16:22-91
+service#io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:20:13-132
+service#io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:23:13-127
+service#io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /home/kwar0715/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/6bb4637a268d185d7b6e1590c274239a/AndroidManifest.xml:26:13-120
